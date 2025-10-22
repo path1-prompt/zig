@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap');
+
+body {
+  font-family: 'Prompt', sans-serif;
+  background: linear-gradient(135deg, #141627, #1e1f2f);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.msger {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  width: 95%;
+  max-width: 420px;
+  height: 80vh;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  backdrop-filter: blur(10px);
+}
+
+.msger-header {
+  background: rgba(0,0,0,0.3);
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  font-weight: 600;
+}
+
+.msger-chat {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  background-color: transparent;
+}
+
+.msg {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 15px;
+}
+
+.left-msg .msg-img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  margin-right: 10px;
+}
+
+.msg-bubble {
+  background: rgba(255,255,255,0.1);
+  padding: 12px;
+  border-radius: 10px;
+  max-width: 75%;
+}
+
+.msg-info-name {
+  font-weight: 600;
+  color: #00ffe1;
+  margin-bottom: 5px;
+}
+
+.msg-text {
+  color: #e9e9e9;
+  font-size: 0.95em;
+  line-height: 1.4;
+}
+
+.msger-inputarea {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  background: rgba(0,0,0,0.2);
+}
+
+.msger-input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.1);
+  color: #bbb;
+}
+
+.msger-send-btn {
+  margin-left: 10px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg,#3a7bd5,#00d2ff);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.msger-send-btn:hover {
+  opacity: 0.9;
+  transform: scale(1.03);
+}
